@@ -1,5 +1,5 @@
 # Data.DocX
-A zip file must be made using run.py, train_data.csv and test_data.csv<br><br>
+The zip file consists run.py, train_data.csv and test_data.csv<br><br>
 **Step 1**: Unzip it. Open Command Prompt and chage your current directory to the unzipped folder.<br>
 **Step 2**: Use the below command in the command prompt:
 ```
