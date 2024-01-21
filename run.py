@@ -27,8 +27,6 @@ df['condition'] = df['condition'].replace(condition_mapping)
 
 test_data = pd.read_csv(args.input_file)
 
-test_data = test_data.drop(columns=columns_to_remove)
-
 test_data['condition'] = test_data['condition'].replace(condition_mapping)
 
 features = ['VLF', 'VLF_PCT', 'LF', 'LF_PCT', 'LF_NU', 'HF', 'HF_PCT', 'HF_NU',
@@ -57,7 +55,7 @@ model.fit(X_train_poly, y_train)
 
 
 predictions = model.predict(X_test_poly)
+
 results_df = pd.DataFrame({'uuid': test_data['uuid'], 'HR': predictions})
 
-# Save the results to a CSV file
 results_df.to_csv("results.csv", index=False)
