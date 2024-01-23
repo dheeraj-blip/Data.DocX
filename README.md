@@ -1,5 +1,4 @@
-# Heart Rate Prediction
-### By Data.DocX
+# Data.DocX
 In the Jupyter notebook, we have tried multiple machine learning models like linear regression, ridge regression, lasso regression, RANSAC regression, XGBoost regression, KNN regression and many more, by using 80% of the dataset as train data, and remaining 20% as test data.<br><br>
 We found out that Polynomial regression of degree 3 has the lowest RMSE (Root Mean Squared Error), compared to all the other models, hence, we are using the same for final prediction.<br><br><br>
 In the 'run.py' file, we have used the 'argparse' python library, to take the path of the test dataset as command line argument. We just have to run the below code in the command prompt:
